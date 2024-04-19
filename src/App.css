@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
 body {
@@ -20,11 +21,23 @@ main {
   border-radius: 8px;
   width: 800px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 20px;
   flex-direction: column;
   gap: 20px;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
 }
 
 .dice-container {
@@ -42,9 +55,28 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: white;
 }
 
 .die-num {
   font-size: 2rem;
+}
+
+.roll-dice-btn {
+  height: 50px;
+  width: 100px;
+  background-color: #5035FF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+}
+
+.roll-dice-btn:focus {
+  outline: none;
+}
+
+.roll-dice-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
